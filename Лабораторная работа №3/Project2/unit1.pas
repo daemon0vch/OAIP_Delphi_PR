@@ -1,0 +1,82 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    BitBtn1: TBitBtn;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Edit1: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Edit1KeyPress(Sender: TObject; var Key: char);
+  private
+
+  public
+
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Edit1KeyPress(Sender: TObject; var Key: char);
+begin
+  if Key=#13 then
+  Begin
+  Label2.Caption:=Edit1.Text + ', ты любишь читать?';
+  Button1.Visible:=True;
+  Button2.Visible:=True;
+
+  end;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+   Label3.Caption:='Молодец!';
+   Edit1.Enabled:=False;
+   Button3.Visible:=True;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+   Label3.Caption:='Почему же? Надо читать.';
+   Edit1.Enabled:=False;
+   Button3.Visible:=True;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  Label2.Caption:='';
+  Label3.Caption:='';
+  Edit1.Text:='';
+  Edit1.Enabled:=True;
+
+  Button1.Visible:=False;
+  Button2.Visible:=False;
+  Button3.Visible:=False;
+
+  Form1.ActiveControl:=Edit1;
+end;
+
+end.
+
