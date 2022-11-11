@@ -1,0 +1,121 @@
+object Form1: TForm1
+  Left = 56
+  Height = 231
+  Top = 180
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object WeightLabel: TLabel
+    Left = 24
+    Height = 15
+    Top = 40
+    Width = 64
+    Caption = 'Введите вес'
+    ParentColor = False
+  end
+  object RostLabel: TLabel
+    Left = 24
+    Height = 15
+    Top = 72
+    Width = 71
+    Caption = 'Введите рост'
+    ParentColor = False
+    Visible = False
+  end
+  object Label3: TLabel
+    Left = 163
+    Height = 1
+    Top = 160
+    Width = 1
+    Anchors = [akTop]
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 224
+    Height = 23
+    Top = 40
+    Width = 80
+    OnChange = Edit1Change
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 224
+    Height = 23
+    Top = 72
+    Width = 80
+    TabOrder = 1
+    Visible = False
+  end
+  object Calculate: TButton
+    Left = 128
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'Рассчитать'
+    Enabled = False
+    OnClick = CalculateClick
+    TabOrder = 2
+  end
+  object Head: TLabel
+    Left = 128
+    Height = 30
+    Top = 8
+    Width = 80
+    Anchors = [akTop]
+    Caption = 'Ваш вес'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clPurple
+    Font.Height = -21
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object bb1: TBitBtn
+    Left = 232
+    Height = 30
+    Top = 184
+    Width = 75
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 3
+  end
+  object Retry: TBitBtn
+    Left = 192
+    Height = 30
+    Top = 184
+    Width = 35
+    Kind = bkRetry
+    Layout = blGlyphTop
+    ModalResult = 4
+    OnClick = RetryClick
+    TabOrder = 4
+  end
+  object bodyWeightIndexMessage: TLabel
+    Left = 161
+    Height = 1
+    Top = 136
+    Width = 1
+    Anchors = [akTop]
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+end
