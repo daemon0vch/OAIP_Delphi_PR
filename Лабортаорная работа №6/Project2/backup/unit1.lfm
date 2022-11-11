@@ -1,0 +1,168 @@
+object Form1: TForm1
+  Left = 345
+  Height = 258
+  Top = 58
+  Width = 351
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object RedPanel: TPanel
+    AnchorSideLeft.Side = asrCenter
+    Left = 16
+    Height = 58
+    Top = 48
+    Width = 58
+    Anchors = []
+    Color = 122
+    ParentColor = False
+    TabOrder = 0
+  end
+  object GreenPanel: TPanel
+    Left = 88
+    Height = 58
+    Top = 48
+    Width = 58
+    Anchors = []
+    Color = 31232
+    ParentColor = False
+    TabOrder = 1
+  end
+  object BluePanel: TPanel
+    Left = 160
+    Height = 58
+    Top = 48
+    Width = 56
+    Anchors = []
+    Color = 7995392
+    ParentColor = False
+    TabOrder = 2
+  end
+  object RedBar: TScrollBar
+    AnchorSideLeft.Control = RedPanel
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = RedPanel
+    AnchorSideTop.Side = asrBottom
+    Left = 37
+    Height = 121
+    Top = 131
+    Width = 17
+    BorderSpacing.Top = 25
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 122
+    TabOrder = 3
+    OnChange = RedBarChange
+  end
+  object GreenBar: TScrollBar
+    AnchorSideLeft.Control = GreenPanel
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = GreenPanel
+    AnchorSideTop.Side = asrBottom
+    Left = 109
+    Height = 121
+    Top = 131
+    Width = 17
+    BorderSpacing.Top = 25
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 122
+    TabOrder = 4
+    OnChange = GreenBarChange
+  end
+  object BlueBar: TScrollBar
+    AnchorSideLeft.Control = BluePanel
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = BluePanel
+    AnchorSideTop.Side = asrBottom
+    Left = 180
+    Height = 121
+    Top = 131
+    Width = 17
+    BorderSpacing.Top = 25
+    Kind = sbVertical
+    Max = 255
+    PageSize = 0
+    Position = 122
+    TabOrder = 5
+    OnChange = BlueBarChange
+  end
+  object RedLabel: TLabel
+    AnchorSideLeft.Control = RedPanel
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = RedPanel
+    AnchorSideTop.Side = asrBottom
+    Left = 36
+    Height = 15
+    Top = 111
+    Width = 18
+    BorderSpacing.Top = 5
+    Caption = '122'
+    ParentColor = False
+  end
+  object GreenLabel: TLabel
+    AnchorSideLeft.Control = GreenPanel
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = GreenPanel
+    AnchorSideTop.Side = asrBottom
+    Left = 108
+    Height = 15
+    Top = 111
+    Width = 18
+    BorderSpacing.Top = 5
+    Caption = '122'
+    ParentColor = False
+  end
+  object BlueLabel: TLabel
+    AnchorSideLeft.Control = BluePanel
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = BluePanel
+    AnchorSideTop.Side = asrBottom
+    Left = 179
+    Height = 15
+    Top = 111
+    Width = 18
+    BorderSpacing.Top = 5
+    Caption = '122'
+    ParentColor = False
+  end
+  object FinalColorPanel: TPanel
+    Left = 232
+    Height = 96
+    Top = 96
+    Width = 98
+    Color = 8026746
+    ParentColor = False
+    TabOrder = 6
+  end
+  object Head: TLabel
+    Left = 72
+    Height = 30
+    Top = 8
+    Width = 217
+    Caption = 'Цвета в формате RGB'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clPurple
+    Font.Height = -21
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 256
+    Height = 30
+    Top = 216
+    Width = 75
+    Anchors = [akRight, akBottom]
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 7
+  end
+end
