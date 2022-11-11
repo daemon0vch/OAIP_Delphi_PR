@@ -1,0 +1,121 @@
+object Form1: TForm1
+  Left = 214
+  Height = 143
+  Top = 196
+  Width = 392
+  ActiveControl = ListBox1
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    AnchorSideLeft.Control = ListBox1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideBottom.Control = ListBox1
+    Left = -2
+    Height = 40
+    Top = 8
+    Width = 128
+    Alignment = taCenter
+    Anchors = [akLeft, akBottom]
+    AutoSize = False
+    Caption = 'Физическая величина'
+    Font.Height = 22
+    Layout = tlBottom
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+  object Label3: TLabel
+    Left = 280
+    Height = 21
+    Top = 35
+    Width = 55
+    Caption = 'Оценка'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    AnchorSideLeft.Control = Label3
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Label3
+    AnchorSideTop.Side = asrBottom
+    Left = 304
+    Height = 15
+    Top = 71
+    Width = 6
+    Alignment = taCenter
+    BorderSpacing.Top = 15
+    Caption = '1'
+    ParentColor = False
+  end
+  object ListBox1: TListBox
+    AnchorSideLeft.Side = asrCenter
+    Left = 12
+    Height = 80
+    Top = 48
+    Width = 100
+    Anchors = []
+    Items.Strings = (
+      'Ватт'
+      'Ом'
+      'Вольт'
+      'Ампер'
+    )
+    ItemHeight = 15
+    OnKeyPress = ListBox1KeyPress
+    TabOrder = 0
+  end
+  object ListBox2: TListBox
+    Left = 124
+    Height = 80
+    Top = 48
+    Width = 100
+    Anchors = []
+    Items.Strings = (
+      'Напряжение'
+      'Сопротивление'
+      'Сила тока'
+      'Мощность'
+    )
+    ItemHeight = 15
+    OnKeyPress = ListBox2KeyPress
+    TabOrder = 1
+  end
+  object BitBtn1: TBitBtn
+    Left = 304
+    Height = 30
+    Top = 104
+    Width = 75
+    Anchors = [akRight, akBottom]
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = ListBox2
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideBottom.Control = ListBox2
+    Left = 133
+    Height = 41
+    Top = 7
+    Width = 82
+    Alignment = taCenter
+    Anchors = [akLeft, akBottom]
+    AutoSize = False
+    Caption = 'Название величины'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+end
