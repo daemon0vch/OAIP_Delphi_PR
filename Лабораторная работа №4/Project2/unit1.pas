@@ -17,6 +17,7 @@ type
     Label2: TLabel;
     Label3: TLabel;
     ListBox1: TListBox;
+    procedure ListBox1Click(Sender: TObject);
     procedure ListBox1KeyPress(Sender: TObject; var Key: char);
   private
 
@@ -50,6 +51,56 @@ begin
             10: Label3.Caption:='лиловый FF0008';
             11: Label3.Caption:='серый 999999';
        end;
+       Case Listbox1.ItemIndex of
+            0: Label3.Font.Color:=$00000000;
+            1: Label3.Font.Color:=$00FFFFFF;
+            2: Label3.Font.Color:=$000000FF;
+            3: Label3.Font.Color:=$0000FF00;
+            4: Label3.Font.Color:=$00FFFF00;
+            5: Label3.Font.Color:=$00FF0000;
+            6: Label3.Font.Color:=$00FF00FF;
+            7: Label3.Font.Color:=$0000FFFF;
+            8: Label3.Font.Color:=$00336699;
+            9: Label3.Font.Color:=$000080FF;
+            10: Label3.Font.Color:=$000800FF;
+            11: Label3.Font.Color:=$00999999;
+       end;
+       If Listbox1.ItemIndex=1 then Label3.Color:=clBlack
+       Else Label3.Color:=clNone;
+end;
+
+procedure TForm1.ListBox1Click(Sender: TObject);
+begin
+        Case Listbox1.ItemIndex of
+            0: Label3.Caption:='черный 000000';
+            1: Label3.Caption:='белый FFFFFF';
+            2: Label3.Caption:='красный FF0000';
+            3: Label3.Caption:='зеленый 00FF00';
+            4: Label3.Caption:='бирюзовый 00FFFF';
+            5: Label3.Caption:='синий 0000FF';
+            6: Label3.Caption:='фиолетовый FF00FF';
+            7: Label3.Caption:='желтый FFFF00';
+            8: Label3.Caption:='коричневый 996633';
+            9: Label3.Caption:='оранжевый FF8000';
+            10: Label3.Caption:='лиловый FF0008';
+            11: Label3.Caption:='серый 999999';
+       end;
+       Case Listbox1.ItemIndex of
+            0: Label3.Font.Color:=$00000000;
+            1: Label3.Font.Color:=$00FFFFFF;
+            2: Label3.Font.Color:=$000000FF;
+            3: Label3.Font.Color:=$0000FF00;
+            4: Label3.Font.Color:=$00FFFF00;
+            5: Label3.Font.Color:=$00FF0000;
+            6: Label3.Font.Color:=$00FF00FF;
+            7: Label3.Font.Color:=$0000FFFF;
+            8: Label3.Font.Color:=$00336699;
+            9: Label3.Font.Color:=$000080FF;
+            10: Label3.Font.Color:=$000800FF;
+            11: Label3.Font.Color:=$00999999;
+       end;
+       If Listbox1.ItemIndex=1 then Label3.Color:=clBlack
+       Else Label3.Color:=clNone;
 end;
 
 end.

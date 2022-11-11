@@ -1,16 +1,18 @@
 object Form1: TForm1
-  Left = 9
+  Left = 217
   Height = 240
-  Top = 177
+  Top = 176
   Width = 320
   Caption = 'Справочник'
   ClientHeight = 240
   ClientWidth = 320
+  Color = clWindow
   LCLVersion = '2.2.4.0'
   object ListBox1: TListBox
     Left = 16
     Height = 190
-    Top = 16
+    Hint = 'Выберите цвет и нажмите Enter'
+    Top = 24
     Width = 56
     Items.Strings = (
       'Black'
@@ -27,22 +29,29 @@ object Form1: TForm1
       'Gray'
     )
     ItemHeight = 15
-    OnClick = ListBox1Click
     OnKeyPress = ListBox1KeyPress
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 0
   end
   object Label1: TLabel
-    Left = 80
-    Height = 15
-    Top = 16
-    Width = 228
+    Left = 16
+    Height = 20
+    Top = 0
+    Width = 290
     Caption = 'Справочник записи цвета в формате RGB'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clPurple
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     ParentColor = False
+    ParentFont = False
   end
   object Label2: TLabel
-    Left = 80
+    Left = 96
     Height = 15
-    Top = 56
+    Top = 48
     Width = 112
     Caption = 'Цвет в формате RGB'
     ParentColor = False
@@ -58,7 +67,7 @@ object Form1: TForm1
     TabOrder = 1
   end
   object Label3: TLabel
-    Left = 80
+    Left = 96
     Height = 1
     Top = 96
     Width = 1
