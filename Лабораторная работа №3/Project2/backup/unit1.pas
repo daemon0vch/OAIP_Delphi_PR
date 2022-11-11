@@ -44,38 +44,38 @@ begin
   if Key=#13 then
   Begin
   Label2.Caption:=Edit1.Text + ', ты любишь читать?';
+
   Button1.Visible:=True;
   Button2.Visible:=True;
-
   end;
-end;
-
-procedure TForm1.Button1Click(Sender: TObject);
-begin
-   Label3.Caption:='Молодец!';
-   Edit1.Enabled:=False;
-   Button3.Visible:=True;
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-   Label3.Caption:='Почему же? Надо читать.';
-   Edit1.Enabled:=False;
-   Button3.Visible:=True;
+  
+  Edit1.Enabled:=False;
+
+  Label3.Caption:='Почему же? Надо читать.';
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-  Label2.Caption:='';
-  Label3.Caption:='';
-  Edit1.Text:='';
+  Edit1.Caption:='';
   Edit1.Enabled:=True;
+
+  Label1.Caption:='';
+  Label2.Caption:='';
 
   Button1.Visible:=False;
   Button2.Visible:=False;
-  Button3.Visible:=False;
+end;
 
-  Form1.ActiveControl:=Edit1;
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  
+  Edit1.Enabled:=False;
+
+  Label3.Caption:='Молодец!';
 end;
 
 end.

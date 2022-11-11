@@ -1,15 +1,12 @@
 object Form1: TForm1
   Left = 183
-  Height = 100
+  Height = 206
   Top = 31
-  Width = 312
+  Width = 320
   Caption = 'Диалог'
-  ClientHeight = 0
-  ClientWidth = 0
-  Position = poDefault
-  UseDockManager = True
+  ClientHeight = 206
+  ClientWidth = 320
   LCLVersion = '2.2.4.0'
-  Visible = True
   object Label1: TLabel
     Left = 24
     Height = 15
@@ -65,7 +62,7 @@ object Form1: TForm1
   object BitBtn1: TBitBtn
     Left = 229
     Height = 30
-    Top = 152
+    Top = 168
     Width = 75
     DefaultCaption = True
     Kind = bkClose
@@ -75,11 +72,10 @@ object Form1: TForm1
   object Button3: TButton
     Left = 229
     Height = 25
-    Top = 120
+    Top = 136
     Width = 75
     Caption = 'Повторить'
     OnClick = Button3Click
     TabOrder = 4
-    Visible = False
   end
 end
