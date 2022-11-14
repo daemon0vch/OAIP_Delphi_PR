@@ -1,0 +1,141 @@
+object Form1: TForm1
+  Left = 214
+  Height = 143
+  Top = 196
+  Width = 436
+  ActiveControl = ListBox1
+  Caption = 'Form1'
+  ClientHeight = 143
+  ClientWidth = 436
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    AnchorSideLeft.Control = ListBox1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideBottom.Control = ListBox1
+    Left = -6
+    Height = 40
+    Top = 8
+    Width = 128
+    Alignment = taCenter
+    Anchors = [akLeft, akBottom]
+    AutoSize = False
+    Caption = 'Физическая величина'
+    Font.Height = 22
+    Layout = tlBottom
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+  object Label3: TLabel
+    Left = 312
+    Height = 21
+    Top = 16
+    Width = 55
+    Caption = 'Оценка'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    AnchorSideLeft.Control = Label3
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Label3
+    AnchorSideTop.Side = asrBottom
+    Left = 339
+    Height = 1
+    Top = 52
+    Width = 1
+    Alignment = taCenter
+    BorderSpacing.Top = 15
+    ParentColor = False
+  end
+  object ListBox1: TListBox
+    AnchorSideLeft.Side = asrCenter
+    Left = 8
+    Height = 80
+    Top = 48
+    Width = 100
+    Anchors = []
+    Items.Strings = (
+      'Ватт'
+      'Ом'
+      'Вольт'
+      'Ампер'
+      'Кулон'
+      'Джоуль'
+      'Сименс'
+      'Градус Цельсия'
+      'Метр'
+      'Секунда'
+    )
+    ItemHeight = 15
+    OnClick = ListBox1Click
+    OnKeyPress = ListBox1KeyPress
+    TabOrder = 0
+  end
+  object ListBox2: TListBox
+    Left = 120
+    Height = 80
+    Top = 48
+    Width = 100
+    Anchors = []
+    Enabled = False
+    Items.Strings = (
+      'Напряжение'
+      'Сопротивление'
+      'Сила тока'
+      'Мощность'
+    )
+    ItemHeight = 15
+    OnClick = ListBox2Click
+    OnKeyPress = ListBox2KeyPress
+    TabOrder = 1
+  end
+  object Quit: TBitBtn
+    Left = 346
+    Height = 30
+    Top = 104
+    Width = 83
+    Anchors = [akRight, akBottom]
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = ListBox2
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideBottom.Control = ListBox2
+    Left = 129
+    Height = 41
+    Top = 7
+    Width = 82
+    Alignment = taCenter
+    Anchors = [akLeft, akBottom]
+    AutoSize = False
+    Caption = 'Название величины'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+  object Retry: TBitBtn
+    Left = 256
+    Height = 30
+    Top = 104
+    Width = 83
+    Caption = 'Повторить'
+    Kind = bkRetry
+    ModalResult = 4
+    OnClick = RetryClick
+    ParentBidiMode = False
+    TabOrder = 3
+  end
+end
