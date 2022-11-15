@@ -1,0 +1,211 @@
+object Form1: TForm1
+  Left = 287
+  Height = 358
+  Top = 181
+  Width = 785
+  Caption = 'Тест по информатике'
+  ClientHeight = 358
+  ClientWidth = 785
+  LCLVersion = '2.2.4.0'
+  object Ex1: TLabel
+    Left = 32
+    Height = 15
+    Top = 24
+    Width = 184
+    Caption = 'Основополжник алгебры логики'
+    ParentColor = False
+  end
+  object Ex2: TLabel
+    Left = 32
+    Height = 64
+    Top = 72
+    Width = 336
+    AutoSize = False
+    Caption = 'Форма мышления, с помощью которой из одного или нескольких суждений может быть получено новое суждение - это...'
+    ParentColor = False
+    WordWrap = True
+  end
+  object Ex3: TLabel
+    Left = 32
+    Height = 15
+    Top = 160
+    Width = 285
+    Caption = 'Выберите пример, не являющийся высказыванием'
+    ParentColor = False
+  end
+  object Ex4: TLabel
+    Left = 32
+    Height = 32
+    Top = 208
+    Width = 336
+    AutoSize = False
+    Caption = '... высказываний истинна тогда и только тогда, когди истинны оба высказывания'
+    ParentColor = False
+    WordWrap = True
+  end
+  object Ex5: TLabel
+    Left = 32
+    Height = 15
+    Top = 264
+    Width = 283
+    Caption = 'Операция логического сложения - это операция ...'
+    ParentColor = False
+  end
+  object Ex1Answer: TRadioGroup
+    Left = 400
+    Height = 41
+    Top = 8
+    Width = 377
+    AutoFill = True
+    Caption = 'Ответы 1'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 4
+    ClientHeight = 21
+    ClientWidth = 373
+    Columns = 4
+    Items.Strings = (
+      'Лейбниц'
+      'Буль'
+      'Нейман'
+      'Паскаль'
+    )
+    OnClick = Ex1AnswerClick
+    TabOrder = 0
+  end
+  object Ex2Answer: TRadioGroup
+    Left = 400
+    Height = 40
+    Top = 80
+    Width = 376
+    AutoFill = True
+    Caption = 'Ответы 2'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 3
+    ClientHeight = 20
+    ClientWidth = 372
+    Columns = 3
+    Items.Strings = (
+      'Высказывание'
+      'Суждение'
+      'Умозаключение'
+    )
+    OnClick = Ex2AnswerClick
+    TabOrder = 1
+  end
+  object Ex3Answer: TRadioGroup
+    Left = 400
+    Height = 41
+    Top = 144
+    Width = 377
+    AutoFill = True
+    Caption = 'Ответы 3'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 4
+    ClientHeight = 21
+    ClientWidth = 373
+    Columns = 4
+    Items.Strings = (
+      '+8>6'
+      '+6+8'
+      '+8<6'
+      '+6=8'
+    )
+    OnClick = Ex3AnswerClick
+    TabOrder = 2
+  end
+  object Ex4Answer: TRadioGroup
+    Left = 400
+    Height = 45
+    Top = 200
+    Width = 376
+    AutoFill = True
+    Caption = 'Ответы 4'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 4
+    ClientHeight = 25
+    ClientWidth = 372
+    Columns = 4
+    Items.Strings = (
+      'Импликация'
+      'Дизъюнкция'
+      'Инверсия'
+      'Конъюнкция'
+    )
+    OnClick = Ex4AnswerClick
+    TabOrder = 3
+  end
+  object Ex5Answer: TRadioGroup
+    Left = 400
+    Height = 41
+    Top = 256
+    Width = 377
+    AutoFill = True
+    Caption = 'Ответы 5'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 4
+    ClientHeight = 21
+    ClientWidth = 373
+    Columns = 4
+    Items.Strings = (
+      'Инверсия'
+      'Конъюнкция'
+      'Дизъюнкция'
+      'Импликация'
+    )
+    OnClick = Ex5AnswerClick
+    TabOrder = 4
+  end
+  object MarkPanel: TPanel
+    Left = 32
+    Height = 31
+    Top = 312
+    Width = 192
+    TabOrder = 5
+  end
+  object Quit: TBitBtn
+    Left = 344
+    Height = 30
+    Top = 313
+    Width = 75
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 6
+  end
+  object Retry: TBitBtn
+    Left = 264
+    Height = 30
+    Top = 313
+    Width = 75
+    DefaultCaption = True
+    Kind = bkRetry
+    ModalResult = 4
+    OnClick = RetryClick
+    TabOrder = 7
+  end
+end
