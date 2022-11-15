@@ -54,6 +54,7 @@ procedure TForm1.Ex1AnswerClick(Sender: TObject);
 begin
   If Ex1Answer.ItemIndex=0 then SUM:=SUM+1;
   answersCounter:=answersCounter+1;
+  Ex1Answer.Enabled:=False;
 
   If answersCounter=5 then
   begin
@@ -65,6 +66,14 @@ begin
    4:MarkPanel.Caption:='4. Хорошо!';
    5:MarkPanel.Caption:='5. Отлично!';
   end;
+
+  Case SUM of
+   0..2:MarkPanel.Color:=clRed;
+   3:MarkPanel.Color:=clLime;
+   4:MarkPanel.Color:=clYellow;
+   5:MarkPanel.Color:=clGreen;
+  end;
+
   ShowMessage('Конец теста');
   answersCounter:=0;
   end;
@@ -74,6 +83,7 @@ procedure TForm1.Ex2AnswerClick(Sender: TObject);
 begin
  If Ex2Answer.ItemIndex=2 then SUM:=SUM+1;
  answersCounter:=answersCounter+1;
+ Ex2Answer.Enabled:=False;
 
  If answersCounter=5 then
  begin
@@ -86,6 +96,13 @@ begin
   5:MarkPanel.Caption:='5. Отлично!';
  end;
 
+  Case SUM of
+   0..2:MarkPanel.Color:=clRed;
+   3:MarkPanel.Color:=clLime;
+   4:MarkPanel.Color:=clYellow;
+   5:MarkPanel.Color:=clGreen;
+  end;
+
   ShowMessage('Конец теста');
   answersCounter:=0;
  end;
@@ -95,6 +112,7 @@ begin
     begin
       If Ex3Answer.ItemIndex=1 then SUM:=SUM+1;
         answersCounter:=answersCounter+1;
+      Ex3Answer.Enabled:=False;
 
       If answersCounter=5 then
       begin
@@ -105,6 +123,13 @@ begin
       3:MarkPanel.Caption:='3. Удволетворительно!';
       4:MarkPanel.Caption:='4. Хорошо!';
       5:MarkPanel.Caption:='5. Отлично!';
+      end;
+
+      Case SUM of
+      0..2:MarkPanel.Color:=clRed;
+      3:MarkPanel.Color:=clLime;
+      4:MarkPanel.Color:=clYellow;
+      5:MarkPanel.Color:=clGreen;
       end;
 
       ShowMessage('Конец теста');
@@ -116,6 +141,7 @@ begin
     begin
       If Ex4Answer.ItemIndex=3 then SUM:=SUM+1;
         answersCounter:=answersCounter+1;
+      Ex4Answer.Enabled:=False;
 
       If answersCounter=5 then
       begin
@@ -126,6 +152,13 @@ begin
       3:MarkPanel.Caption:='3. Удволетворительно!';
       4:MarkPanel.Caption:='4. Хорошо!';
       5:MarkPanel.Caption:='5. Отлично!';
+      end;
+
+      Case SUM of
+      0..2:MarkPanel.Color:=clRed;
+      3:MarkPanel.Color:=clLime;
+      4:MarkPanel.Color:=clYellow;
+      5:MarkPanel.Color:=clGreen;
       end;
 
       ShowMessage('Конец теста');
@@ -137,6 +170,7 @@ begin
     begin
       If Ex5Answer.ItemIndex=2 then SUM:=SUM+1;
         answersCounter:=answersCounter+1;
+      Ex5Answer.Enabled:=False;
 
       If answersCounter=5 then
       begin
@@ -147,6 +181,13 @@ begin
       3:MarkPanel.Caption:='3. Удволетворительно!';
       4:MarkPanel.Caption:='4. Хорошо!';
       5:MarkPanel.Caption:='5. Отлично!';
+      end;
+
+      Case SUM of
+      0..2:MarkPanel.Color:=clRed;
+      3:MarkPanel.Color:=clLime;
+      4:MarkPanel.Color:=clYellow;
+      5:MarkPanel.Color:=clGreen;
       end;
 
       ShowMessage('Конец теста');
@@ -166,15 +207,19 @@ begin
   SUM:=0;
 
   Ex1Answer.ItemIndex:=-1;
+  Ex1Answer.Enabled:=True;
   Ex2Answer.ItemIndex:=-1;
+  Ex2Answer.Enabled:=True;
   Ex3Answer.ItemIndex:=-1;
+  Ex3Answer.Enabled:=True;
   Ex4Answer.ItemIndex:=-1;
+  Ex4Answer.Enabled:=True;
   Ex5Answer.ItemIndex:=-1;
+  Ex5Answer.Enabled:=True;
 
   MarkPanel.Caption:='';
-
+  MarkPanel.Color:=clNone;
 end;
-
-    end.
+end.
 
 

@@ -65,6 +65,14 @@ begin
    4:MarkPanel.Caption:='4. Хорошо!';
    5:MarkPanel.Caption:='5. Отлично!';
   end;
+
+  Case SUM of
+   0..2:MarkPanel.Color:=clRed;
+   3:MarkPanel.Color:=clLime;
+   4:MarkPanel.Color:=clYellow;
+   5:MarkPanel.Color:=clGreen;
+  end;
+
   ShowMessage('Конец теста');
   answersCounter:=0;
   end;
@@ -86,6 +94,13 @@ begin
   5:MarkPanel.Caption:='5. Отлично!';
  end;
 
+  Case SUM of
+   0..2:MarkPanel.Color:=clRed;
+   3:MarkPanel.Color:=clLime;
+   4:MarkPanel.Color:=clYellow;
+   5:MarkPanel.Color:=clGreen;
+  end;
+
   ShowMessage('Конец теста');
   answersCounter:=0;
  end;
@@ -105,6 +120,13 @@ begin
       3:MarkPanel.Caption:='3. Удволетворительно!';
       4:MarkPanel.Caption:='4. Хорошо!';
       5:MarkPanel.Caption:='5. Отлично!';
+      end;
+
+      Case SUM of
+      0..2:MarkPanel.Color:=clRed;
+      3:MarkPanel.Color:=clLime;
+      4:MarkPanel.Color:=clYellow;
+      5:MarkPanel.Color:=clGreen;
       end;
 
       ShowMessage('Конец теста');
@@ -128,6 +150,13 @@ begin
       5:MarkPanel.Caption:='5. Отлично!';
       end;
 
+      Case SUM of
+      0..2:MarkPanel.Color:=clRed;
+      3:MarkPanel.Color:=clLime;
+      4:MarkPanel.Color:=clYellow;
+      5:MarkPanel.Color:=clGreen;
+      end;
+
       ShowMessage('Конец теста');
       answersCounter:=0;
       end;
@@ -149,6 +178,13 @@ begin
       5:MarkPanel.Caption:='5. Отлично!';
       end;
 
+      Case SUM of
+      0..2:MarkPanel.Color:=clRed;
+      3:MarkPanel.Color:=clLime;
+      4:MarkPanel.Color:=clYellow;
+      5:MarkPanel.Color:=clGreen;
+      end;
+
       ShowMessage('Конец теста');
       answersCounter:=0;
       end;
@@ -162,6 +198,7 @@ begin
 
 procedure TForm1.RetryClick(Sender: TObject);
 begin
+  answersCounter:=0;
   SUM:=0;
 
   Ex1Answer.ItemIndex:=-1;
