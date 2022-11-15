@@ -147,6 +147,18 @@ begin
 
   ListBox1.ItemIndex:=-1;
   ListBox2.ItemIndex:=-1;
+
+  ListBox1.Items.Delete(0);
+  ListBox1.Items.Insert(0, 'Ватт');
+
+  ListBox1.Items.Delete(1);
+  ListBox1.Items.Insert(1, 'Ом');
+
+  ListBox1.Items.Delete(2);
+  ListBox1.Items.Insert(2, 'Вольт');
+
+  ListBox1.Items.Delete(3);
+  ListBox1.Items.Insert(3, 'Ампер');
 end;
 
 end.
