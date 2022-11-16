@@ -1,0 +1,160 @@
+object Form1: TForm1
+  Left = 303
+  Height = 321
+  Top = 31
+  Width = 507
+  Caption = 'Form1'
+  ClientHeight = 321
+  ClientWidth = 507
+  LCLVersion = '2.2.4.0'
+  object MatrixSizeLabel: TLabel
+    Left = 408
+    Height = 15
+    Top = 8
+    Width = 93
+    Anchors = []
+    Caption = 'Размер матрицы'
+    ParentColor = False
+  end
+  object NEdit: TEdit
+    AnchorSideLeft.Control = MatrixSizeLabel
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = MatrixSizeLabel
+    AnchorSideTop.Side = asrBottom
+    Left = 414
+    Height = 23
+    Top = 28
+    Width = 80
+    BorderSpacing.Top = 5
+    OnKeyPress = NEditKeyPress
+    TabOrder = 0
+    TextHint = 'Строк'
+  end
+  object MEdit: TEdit
+    AnchorSideLeft.Control = MatrixSizeLabel
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = MatrixSizeLabel
+    Left = 414
+    Height = 23
+    Top = 59
+    Width = 80
+    BorderSpacing.Top = 51
+    OnKeyPress = MEditKeyPress
+    TabOrder = 1
+    TextHint = 'Столбцов'
+  end
+  object ButtonMatrixCreate: TButton
+    Left = 416
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'Создать'
+    OnClick = ButtonMatrixCreateClick
+    TabOrder = 2
+  end
+  object ButtonMatrixFill: TButton
+    Left = 416
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'Заполнить'
+    TabOrder = 3
+    Visible = False
+  end
+  object ButtonMatrixClear: TButton
+    Left = 416
+    Height = 25
+    Top = 168
+    Width = 75
+    Caption = 'Очистить'
+    TabOrder = 4
+    Visible = False
+  end
+  object Matrix: TStringGrid
+    Left = 8
+    Height = 185
+    Top = 8
+    Width = 384
+    DefaultColWidth = 40
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    TabOrder = 5
+    Visible = False
+    OnKeyPress = MatrixKeyPress
+  end
+  object ElementSumName: TLabel
+    Left = 316
+    Height = 15
+    Top = 208
+    Width = 100
+    Alignment = taRightJustify
+    Caption = 'Сумма элементов'
+    ParentColor = False
+  end
+  object MaxElementName: TLabel
+    Left = 280
+    Height = 15
+    Top = 256
+    Width = 136
+    Alignment = taRightJustify
+    Caption = 'Максимальный элемент'
+    ParentColor = False
+  end
+  object MinElementName: TLabel
+    Left = 284
+    Height = 15
+    Top = 232
+    Width = 132
+    Alignment = taRightJustify
+    Caption = 'Минимальный элемент'
+    ParentColor = False
+  end
+  object ElementSum: TLabel
+    AnchorSideLeft.Control = ElementSumName
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = ElementSumName
+    Left = 446
+    Height = 15
+    Top = 208
+    Width = 34
+    Alignment = taCenter
+    BorderSpacing.Left = 30
+    Caption = 'debug'
+    ParentColor = False
+  end
+  object MaxElement: TLabel
+    AnchorSideLeft.Control = MaxElementName
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = MaxElementName
+    Left = 446
+    Height = 15
+    Top = 256
+    Width = 34
+    Alignment = taCenter
+    BorderSpacing.Left = 30
+    Caption = 'debug'
+    ParentColor = False
+  end
+  object MinElement: TLabel
+    AnchorSideLeft.Control = MinElementName
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = MinElementName
+    Left = 446
+    Height = 15
+    Top = 232
+    Width = 34
+    Alignment = taCenter
+    BorderSpacing.Left = 30
+    Caption = 'debug'
+    ParentColor = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 416
+    Height = 30
+    Top = 280
+    Width = 75
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 6
+  end
+end
