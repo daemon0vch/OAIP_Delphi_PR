@@ -18,6 +18,7 @@
         <Filename Value="unit1.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
         <IsVisibleTab Value="True"/>
@@ -28,11 +29,7 @@
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="15">
-      <Position>
-        <Filename Value="unit1.pas"/>
-        <Caret TopLine="12"/>
-      </Position>
+    <JumpHistory HistoryIndex="14">
       <Position>
         <Filename Value="unit1.pas"/>
         <Caret Line="52" TopLine="29"/>

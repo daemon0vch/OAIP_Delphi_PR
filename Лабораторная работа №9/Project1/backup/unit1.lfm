@@ -58,8 +58,8 @@ object Form1: TForm1
     Top = 136
     Width = 75
     Caption = 'Заполнить'
+    Enabled = False
     TabOrder = 3
-    Visible = False
   end
   object ButtonMatrixClear: TButton
     Left = 416
@@ -67,8 +67,8 @@ object Form1: TForm1
     Top = 168
     Width = 75
     Caption = 'Очистить'
+    Enabled = False
     TabOrder = 4
-    Visible = False
   end
   object Matrix: TStringGrid
     Left = 8

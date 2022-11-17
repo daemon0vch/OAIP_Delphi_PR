@@ -113,12 +113,11 @@ object Form1: TForm1
     AnchorSideLeft.Side = asrBottom
     AnchorSideTop.Control = ElementSumName
     Left = 446
-    Height = 15
+    Height = 1
     Top = 208
-    Width = 34
+    Width = 1
     Alignment = taCenter
     BorderSpacing.Left = 30
-    Caption = 'debug'
     ParentColor = False
   end
   object MaxElement: TLabel
@@ -126,12 +125,11 @@ object Form1: TForm1
     AnchorSideLeft.Side = asrBottom
     AnchorSideTop.Control = MaxElementName
     Left = 446
-    Height = 15
+    Height = 1
     Top = 256
-    Width = 34
+    Width = 1
     Alignment = taCenter
     BorderSpacing.Left = 30
-    Caption = 'debug'
     ParentColor = False
   end
   object MinElement: TLabel
@@ -139,12 +137,11 @@ object Form1: TForm1
     AnchorSideLeft.Side = asrBottom
     AnchorSideTop.Control = MinElementName
     Left = 446
-    Height = 15
+    Height = 1
     Top = 232
-    Width = 34
+    Width = 1
     Alignment = taCenter
     BorderSpacing.Left = 30
-    Caption = 'debug'
     ParentColor = False
   end
   object BitBtn1: TBitBtn
