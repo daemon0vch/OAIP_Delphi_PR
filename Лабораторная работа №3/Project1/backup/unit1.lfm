@@ -55,6 +55,7 @@ object Form1: TForm1
     Hint = 'Введите своё имя и нажмите Enter'
     Top = 12
     Width = 80
+    MaxLength = 15
     OnKeyPress = Edit1KeyPress
     TabOrder = 2
   end

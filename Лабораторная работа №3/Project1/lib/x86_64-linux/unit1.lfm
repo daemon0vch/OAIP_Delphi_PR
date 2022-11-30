@@ -1,0 +1,73 @@
+object Form1: TForm1
+  Left = 361
+  Height = 153
+  Top = 158
+  Width = 286
+  Caption = 'Диалог'
+  ClientHeight = 153
+  ClientWidth = 286
+  DesignTimePPI = 83
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 21
+    Height = 18
+    Top = 14
+    Width = 210
+    Caption = 'Введите своё имя и нажмите Enter'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 21
+    Height = 1
+    Top = 59
+    Width = 1
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 21
+    Height = 1
+    Top = 80
+    Width = 1
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 198
+    Height = 22
+    Top = 48
+    Width = 65
+    Caption = 'Да'
+    OnClick = Button1Click
+    TabOrder = 0
+    Visible = False
+  end
+  object Button2: TButton
+    Left = 198
+    Height = 22
+    Top = 76
+    Width = 65
+    Caption = 'Нет'
+    OnClick = Button2Click
+    TabOrder = 1
+    Visible = False
+  end
+  object Edit1: TEdit
+    Left = 194
+    Height = 36
+    Hint = 'Введите своё имя и нажмите Enter'
+    Top = 10
+    Width = 69
+    MaxLength = 15
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 2
+  end
+  object BitBtn1: TBitBtn
+    Left = 198
+    Height = 26
+    Top = 111
+    Width = 65
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 3
+  end
+end

@@ -12,7 +12,6 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
-    Head: TLabel;
     RedLabel: TLabel;
     GreenLabel: TLabel;
     BlueLabel: TLabel;

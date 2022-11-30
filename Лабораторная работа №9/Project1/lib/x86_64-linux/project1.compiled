@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1661927675"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -gw2 -godwarfsets -gl -l -vewnhibq &quot;-Fi/home/daemon0vch/Репозитории/GitHub/OAIP_Delphi_PR/Лабораторная работа №9/Project1/lib/x86_64-linux&quot; -Fu/usr/lib/lazarus/lcl/units/x86_64-linux/qt5 -Fu/usr/lib/lazarus/lcl/units/x86_64-linux -Fu/usr/lib/lazarus/components/freetype/lib/x86_64-linux -Fu/usr/lib/lazarus/components/lazutils/lib/x86_64-linux -Fu/usr/lib/lazarus/packager/units/x86_64-linux &quot;-Fu/home/daemon0vch/Репозитории/GitHub/OAIP_Delphi_PR/Лабораторная работа №9/Project1/&quot; &quot;-FU/home/daemon0vch/Репозитории/GitHub/OAIP_Delphi_PR/Лабораторная работа №9/Project1/lib/x86_64-linux/&quot; &quot;-FE/home/daemon0vch/Репозитории/GitHub/OAIP_Delphi_PR/Лабораторная работа №9/Project1/&quot; &quot;-o/home/daemon0vch/Репозитории/GitHub/OAIP_Delphi_PR/Лабораторная работа №9/Project1/project1&quot; -dLCL -dLCLqt5 project1.lpr"/>
+</CONFIG>

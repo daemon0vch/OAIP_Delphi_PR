@@ -1,18 +1,18 @@
 object Form1: TForm1
   Left = 345
-  Height = 269
+  Height = 216
   Top = 58
   Width = 346
   Caption = 'Form1'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 216
+  ClientWidth = 346
   OnCreate = FormCreate
   LCLVersion = '2.2.4.0'
   object RedPanel: TPanel
     AnchorSideLeft.Side = asrCenter
-    Left = 16
+    Left = 8
     Height = 58
-    Top = 48
+    Top = 6
     Width = 58
     Anchors = []
     Color = 122
@@ -20,9 +20,9 @@ object Form1: TForm1
     TabOrder = 0
   end
   object GreenPanel: TPanel
-    Left = 88
+    Left = 84
     Height = 58
-    Top = 48
+    Top = 6
     Width = 58
     Anchors = []
     Color = 31232
@@ -30,9 +30,9 @@ object Form1: TForm1
     TabOrder = 1
   end
   object BluePanel: TPanel
-    Left = 160
+    Left = 159
     Height = 58
-    Top = 48
+    Top = 6
     Width = 56
     Anchors = []
     Color = 7995392
@@ -44,9 +44,9 @@ object Form1: TForm1
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = RedPanel
     AnchorSideTop.Side = asrBottom
-    Left = 37
+    Left = 29
     Height = 121
-    Top = 131
+    Top = 89
     Width = 17
     BorderSpacing.Top = 25
     Kind = sbVertical
@@ -61,9 +61,9 @@ object Form1: TForm1
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = GreenPanel
     AnchorSideTop.Side = asrBottom
-    Left = 109
+    Left = 105
     Height = 121
-    Top = 131
+    Top = 89
     Width = 17
     BorderSpacing.Top = 25
     Kind = sbVertical
@@ -78,9 +78,9 @@ object Form1: TForm1
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = BluePanel
     AnchorSideTop.Side = asrBottom
-    Left = 180
+    Left = 179
     Height = 121
-    Top = 131
+    Top = 89
     Width = 17
     BorderSpacing.Top = 25
     Kind = sbVertical
@@ -95,9 +95,9 @@ object Form1: TForm1
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = RedPanel
     AnchorSideTop.Side = asrBottom
-    Left = 36
+    Left = 28
     Height = 15
-    Top = 111
+    Top = 69
     Width = 18
     BorderSpacing.Top = 5
     Caption = '122'
@@ -108,9 +108,9 @@ object Form1: TForm1
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = GreenPanel
     AnchorSideTop.Side = asrBottom
-    Left = 108
+    Left = 104
     Height = 15
-    Top = 111
+    Top = 69
     Width = 18
     BorderSpacing.Top = 5
     Caption = '122'
@@ -121,9 +121,9 @@ object Form1: TForm1
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = BluePanel
     AnchorSideTop.Side = asrBottom
-    Left = 179
+    Left = 178
     Height = 15
-    Top = 111
+    Top = 69
     Width = 18
     BorderSpacing.Top = 5
     Caption = '122'
@@ -132,26 +132,10 @@ object Form1: TForm1
   object FinalColorPanel: TPanel
     Left = 232
     Height = 96
-    Top = 96
+    Top = 40
     Width = 98
     Color = 8026746
     ParentColor = False
     TabOrder = 6
-  end
-  object Head: TLabel
-    Left = 72
-    Height = 30
-    Top = 8
-    Width = 217
-    Caption = 'Цвета в формате RGB'
-    Font.CharSet = RUSSIAN_CHARSET
-    Font.Color = clPurple
-    Font.Height = -21
-    Font.Name = 'Segoe UI Semibold'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
   end
 end
